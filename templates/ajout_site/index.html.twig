@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Site{% endblock %}
+
+{% block body %}
+<div class="formulaire"> 
+    {{ form_start(form) }}
+    <div class="form-group">
+        {{ form_row(form.nom) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.lien) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.version) }}
+    </div>
+    <div class="form-group">
+        {{ form_row(form.clientConcerne) }}
+    </div>
+        <button class="btn_form btn btn-primary" type="submit"> Valider </button>
+    {{ form_end(form) }}
+</div>
+{% endblock %}

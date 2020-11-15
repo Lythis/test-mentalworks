@@ -1,0 +1,34 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+        <form class="pull-right hidden margin-bar" role="search" id="nav-search-form" method="post" action="{{ path('search_client') }}">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name ="search">
+            </div>
+        </form>
+{% for sites in site %}
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th class ="espace" scope="col e">#</th>
+                <th class ="espace" scope="col ">Nom Entreprise</th>
+                <th class ="espace" scope="col ">Lien</th>
+                <th class ="espace" scope="col ">PhpVersion</th>
+                <th class ="espace" scope="col ">Client</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">{{sites.id}}</th>
+                <td>{{sites.nom}}</td>
+                <td>{{sites.lien}}</td>
+                <td>{{sites.version}}</td>
+                <td>{{sites.clientConcerne.nomContact}}
+            </tr>
+        </tbody>
+    </table>
+{% endfor %}
+{% endblock %}

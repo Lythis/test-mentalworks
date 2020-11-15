@@ -1,0 +1,74 @@
+header{
+    height: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.formulaire{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.btn_form-second{
+    margin-left: 47%;
+    margin-top: 2%;
+}
+
+.btn_form{
+    margin-left: 32%;
+}
+
+#site_nom{
+    margin-left: 10%;
+}
+
+#site_lien{
+    margin-left: 12%;
+}
+
+#site_version{
+    margin-left: 18%;
+}
+
+#site_clientConcerne{
+    margin-left: 3%;
+}
+
+#client_nomEntreprise{
+    margin-left: 3%;
+}
+
+#client_nomContact{
+    margin-left: 8%;
+}
+
+#client_emailContact{
+    margin-left: 7%;
+}
+
+#client_numTelephoneContact{
+    margin-left: 32%;
+}
+
+.form_tel label{
+    margin-left: 32%;
+}
+
+.espace{
+    width: 20%;
+}
+
+.space_between {
+    padding-left: 10%;
+}
+
+.navbar-nav{
+    width: 300px;
+}

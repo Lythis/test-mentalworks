@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Client{% endblock %}
+
+{% block body %}
+    <div class="formulaire">
+        {{ form_start(form) }}
+        <div class)="form-group mt-5">
+            {{form_row(form.nomEntreprise)}}
+        </div>
+        <div class)="form-group">
+            {{ form_row(form.nomContact) }}     
+        </div>
+            {{ form_row(form.emailContact) }}    
+        <div class)="form-group form_tel">
+            {{ form_row(form.numTelephoneContact) }}
+        </div>
+        <button class="btn_form-second btn btn-primary" type="submit"> Valider </button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
